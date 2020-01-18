@@ -47,3 +47,17 @@ Here you use the fact that you can go from Word A -> Word B with one change;
 you then apply the same thing, but going from Word B -> Word C; and so on.
 If at any point you end up with Word Z (ie the Word you're aiming for) then
 you've found a way.
+
+## Hints
+
+* To find the length of a word use `len`
+* To read all the words from a file you've opened use `read().split()`
+* To find all the words of a certain length, loop over the list of all the
+  words and create a new list where the length is correct
+* You can't change a letter in a string. But you can use `list` to convert
+  the string to a list and change letters in the list
+* If you want to compare two things of equal length you can use
+  `zip` to match each thing against the other. (Think of a real zip).
+  NB `zip` itself gives you an opaque object which you have to iterate over.
+  You can use `list(zip(...))` to see the matching pairs.
+
